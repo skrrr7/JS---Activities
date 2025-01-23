@@ -55,53 +55,54 @@
 7. Identify and implement the best practices of creating and using variables by avoiding errors and debugging the following codes. 
     - Log the values of each variable to follow/mimic the output.
 */
-let companyName = "Tech Solutions";
-let companyEmail = "contact@techsolutions.com";
-let companyContact = 1234567890;
-let employees = ["Me", "Myself", "I"];
-let companyAddress = {
-    street: "Cebu",
-    city: "Cebu City",
-    state: "PH"
+console.log("Company Profile");
+let companyName = "XYZ Industries";
+let companyEmail = "xyzindustries@gmail.com";
+let companyContact = "09180001234";
+console.log(companyName);
+console.log(companyEmail);
+console.log(companyContact);
+let employees = ["Miguel", "Yuji", "Nobara"];
+console.log(employees);
+
+let companyAddress  = {
+    street: "Orange St.",
+    city: "Sacramento",
+    state: "California"
 };
 
-let intro = "Welcome to our company, " + companyName + "!";
-console.log(intro);
+console.log(companyAddress);
 
-let str = "Twice";
+console.log("Welcome to our company, " 
+	+ companyName);
+let str ="Twice";
 let num = 27;
 let bool = true;
-let arr = ["Dahyun", "Chaeyoung", "Mina"];
-let obj = { twice: "Dahyun" };
+let arr = ["Dahyun","Chaeyoung","Mina"];
+let obj = {twice: "Dahyun"};
+console.log(typeof(str));
+console.log(typeof(num));
+console.log(typeof(bool));
+console.log(typeof(arr));
+console.log(typeof(obj));
 
-console.log(typeof str); 
-console.log(typeof num); 
-console.log(typeof bool); 
-console.log(typeof arr); 
-console.log(typeof obj); 
-
-
-
-let clients = ["24Chicken", "Jollibee", "McDonald's", true, "KFC"];
 console.log("Our Clients are: ");
-console.log(clients);
-
-let employee_profile = {
-    username: "ceo_mark",
-    fullName: "Mark Jones",
-    age: 40,
-    position: "CEO",
-    isActive: true
-};
+let fastFood = ['24Chicken', 'Jollibee', "Mcdonald's",
+'Mang Inasal', 'KFC'];
+console.log(fastFood);
 
 console.log("My Employee Profile: ");
-console.log(employee_profile);
-
-let deposits = 1000;  
-console.log("Your deposits: " + deposits);
-
-let expenses = [1000, 2000, 500, 210];
-console.log("Your expenses: " + expenses);
-
-let isAdmin = "yes";
-console.log("Is the current user an admin?: " + isAdmin); 
+let employeeProfile = {
+	username: "ceo_mark",
+	fullName: "Mark Jones",
+	age: 40,
+	position: "CEO",
+	isActive: true
+};
+console.log(employeeProfile);
+let deposits = [5000,6000,3000,2000];
+let expenses = [1000,2000,500,210];
+let admin = true;
+console.log("Your deposits: "+ deposits);
+console.log("Your expenses: "+ expenses);
+console.log("Is the current user an admin?: "+ admin);
