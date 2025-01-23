@@ -24,21 +24,23 @@
 5. Identify and implement the best practices of creating and using variables by avoiding errors and debugging the following codes. 
     - Log the values of each variable to follow/mimic the output.
 */
+let UserProfile = "User Profile";
+console.log(UserProfile);
 
-let firstName = "Raphael";
-console.log("First Name:", firstName);
+let firstName = "John";
+console.log(firstName);
 
-let lastName = "Escosia";
-console.log("Last Name:", lastName);
+let lastName = "Smith";
+console.log(lastName);
 
-let age = 21;
-console.log("Age:", age);
+let age = 30;
+console.log(age);
 
-let mobileNumber = "09947909670";
-console.log("Mobile Number:", mobileNumber);
+let mobileNumber = "09162103021";
+console.log(mobileNumber);
 
-let address = "Talisay City";
-console.log("Address:", address);
+let address = "Cainta Rizal";
+console.log(address);
 
 let realName = "Steve Rogers";  
 console.log("My real name is:");
