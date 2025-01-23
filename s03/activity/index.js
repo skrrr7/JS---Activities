@@ -24,8 +24,8 @@
 5. Identify and implement the best practices of creating and using variables by avoiding errors and debugging the following codes. 
     - Log the values of each variable to follow/mimic the output.
 */
-let UserProfile = "User Profile";
-console.log(UserProfile);
+
+console.log("User Profile");
 
 let firstName = "John";
 console.log(firstName);
