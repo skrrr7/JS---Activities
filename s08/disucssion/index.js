@@ -67,12 +67,4 @@ let total = 100 + returnSumNumbers();
 console.log(total);
 
 
-const arr = [1, 2, 3];
-arr[3] = 4;
-
-function add(a, b) {
-    return a + b;
-}
-
-console.log(add(5)); // What will this print?
 
