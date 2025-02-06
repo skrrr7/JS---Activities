@@ -91,7 +91,7 @@ console.log(square);
 
 // 4.
 function double(num) {
-    return num * 2;
+    return num*2;
 }
 
 let doubled = double(2);
