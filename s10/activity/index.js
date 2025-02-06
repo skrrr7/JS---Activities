@@ -43,7 +43,7 @@
 */
 // 1.
 function addNum(a, b) {
-    return a + b;
+    return a+b;
 }
 console.log("addNum(15, 5)");
 console.log(addNum(15,5));
