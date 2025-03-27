@@ -237,7 +237,7 @@ console.log(parsedUsers);
 let product = {
     id: 101,
     name: "Smartphone",
-    price: 699.99,
+    price: 699.70,
     inStock: true,
     features: ["5G", "128GB Storage", "OLED Display"]
 };
