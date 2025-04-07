@@ -1,0 +1,33 @@
+<html>
+    <head> 
+        <title>React DOM with fetch</title>
+    </head>
+    <body>
+
+        <h1>ALL posts</h1>
+        <div id="div-post-entries"></div>
+        <hr>
+        <h1>Add post</h1>
+        <form id="form-add-post">
+            <span>Title</span><br>
+            <input type="text" id="txt-title"><br>
+            <span>Body</span>
+            <textarea type="text" id="txt-body"></textarea><br>
+            <button type="submit">Create</button>
+
+        </form>
+        <hr>
+
+<h1>View A Post</h1>
+<form id="form-view-post">
+    <label for="view-post-id">Post ID</label><br>
+    <input type="number" id="view-post-id" min="1" required />
+    <button type="submit" id="btn-view-post" disabled>View</button>
+</form>
+
+<div id="single-post-display"></div>
+
+
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
