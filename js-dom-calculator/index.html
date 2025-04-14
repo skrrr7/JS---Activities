@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Calculator</title>
+  <style>
+    /* General body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Calculator container */
+    .calculator {
+      border: 1px solid #000;
+      border-radius: 8px;
+      padding: 20px;
+      width: 350px;
+      text-align: center;
+    }
+
+    /* Title */
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    /* Input fields styling */
+    input[type="number"] {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    /* Operation buttons */
+    .buttons button {
+      width: 60px;
+      height: 40px;
+      margin: 5px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    /* Memory buttons */
+    .memory-buttons button {
+      width: 60px;
+      height: 40px;
+      margin: 5px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    /* Result styling */
+    #result {
+      margin-top: 20px;
+      font-size: 1.5em;
+    }
+
+    /* History section */
+    ul#historyList {
+      margin-top: 15px;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #historyList li {
+      padding: 5px;
+      margin-bottom: 5px;
+      border: 1px solid #000;
+      border-radius: 4px;
+    }
+
+    /* Clear history button */
+    button#clearHistory {
+      border: 1px solid #000;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h1>Dynamic Calculator</h1>
+
+    <input type="number" id="num1" placeholder="Enter first number" />
+    <input type="number" id="num2" placeholder="Enter second number" />
+
+    <div class="buttons">
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculate('-')">−</button>
+      <button onclick="calculate('*')">×</button>
+      <button onclick="calculate('/')">÷</button>
+    </div>
+
+    <h2 id="result">Result: </h2>
+
+    <div class="memory-buttons">
+      <button onclick="storeMemory()">M+</button>
+      <button onclick="recallMemory()">MR</button>
+      <button onclick="clearMemory()">MC</button>
+    </div>
+
+    <h3>History:</h3>
+    <ul id="historyList"></ul>
+    <button onclick="clearHistory()" id="clearHistory" disabled>Clear History</button>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
