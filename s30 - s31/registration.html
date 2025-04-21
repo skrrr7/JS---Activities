@@ -60,12 +60,10 @@
         .btn-submit:hover {
             background-color: #0056b3;
         }
-        .btn-reset {
-            background-color: #6c757d;
-            color: white;
-        }
-        .btn-reset:hover {
-            background-color: #5a6268;
+        .error {
+            color: red;
+            font-size: 12px;
+            display: none;
         }
     </style>
 </head>
@@ -76,19 +74,23 @@
         <div>
             <a href="index.html">Home</a>
             <a href="login.html">Login</a>
-            <a href="registration.html">Register</a>
+            <a href="register.html">Register</a>
         </div>
     </div>
     <!-- Registration Form -->
     <div class="form-container">
         <h1>Register</h1>
-        <form>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="password" placeholder="Confirm Password" required>
+        <form id="registerForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <span id="emailError" class="error">Invalid email format.</span>
+            <input type="password" id="password" placeholder="Password" required>
+            <span id="passwordError" class="error">Password must be at least 8 characters.</span>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <span id="confirmPasswordError" class="error">Passwords do not match.</span>
             <button type="submit" class="btn-submit">Submit</button>
-            <button type="reset" class="btn-reset">Reset</button>
         </form>
     </div>
+
+    <script src="register.js"></script>
 </body>
 </html>
