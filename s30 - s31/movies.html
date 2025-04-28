@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zuitt Movie Library</title>
+    <title>Movies - Zuitt Movie Library</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="navbar">
         <h3>Zuitt Movie Library</h3>
         <div>
+            <a href="movies.html">Movies</a>
             <a href="login.html">Login</a>
             <a href="registration.html">Register</a>
         </div>
     </div>
-    <div class="landing">
-        <h1>Welcome to Our Movie Library</h1>
-        <p>Explore a world of cinematic wonders. Dive in and discover now!</p>
-        <a href="movies.html"><button>Browse Movies</button></a>
+    <div class="movies-container">
+        <h1>Movie Library</h1>
+        <div class="movies-grid" id="moviesGrid">
+            <!-- Movies will be dynamically added here -->
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

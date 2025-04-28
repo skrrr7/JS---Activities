@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Zuitt Movie Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h3>Zuitt Movie Library</h3>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="registration.html">Register</a>
+        </div>
+    </div>
+    <div class="form-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">Email</label><br>
+                <input type="text" id="loginEmail" name="email">
+                <span id="loginEmailError" class="error">Enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label><br>
+                <input type="password" id="loginPassword" name="password">
+                <span id="loginPasswordError" class="error">Password must be at least 8 characters.</span>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

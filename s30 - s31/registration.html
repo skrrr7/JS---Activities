@@ -3,72 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <style>
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-        .navbar {
-            background-color: #333;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 20px;
-        }
-        .navbar a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        /* Form styling */
-        .form-container {
-            margin-top: 50px;
-            padding: 20px;
-            display: inline-block;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        input {
-            margin: 10px 0;
-            padding: 10px;
-            width: 250px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .btn-submit {
-            background-color: #007bff;
-            color: white;
-        }
-        .btn-submit:hover {
-            background-color: #0056b3;
-        }
-        .error {
-            color: red;
-            font-size: 12px;
-            display: none;
-        }
-    </style>
+    <title>Register - Zuitt Movie Library</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
     <div class="navbar">
         <h3>Zuitt Movie Library</h3>
         <div>
@@ -77,20 +15,27 @@
             <a href="register.html">Register</a>
         </div>
     </div>
-    <!-- Registration Form -->
     <div class="form-container">
         <h1>Register</h1>
         <form id="registerForm">
-            <input type="email" id="email" placeholder="Email" required>
-            <span id="emailError" class="error">Invalid email format.</span>
-            <input type="password" id="password" placeholder="Password" required>
-            <span id="passwordError" class="error">Password must be at least 8 characters.</span>
-            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
-            <span id="confirmPasswordError" class="error">Passwords do not match.</span>
-            <button type="submit" class="btn-submit">Submit</button>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error">Enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password">
+                <span id="passwordError" class="error">Password must be at least 8 characters.</span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+                <span id="confirmPasswordError" class="error">Passwords must match.</span>
+            </div>
+            <button type="submit">Submit</button>
         </form>
     </div>
-
-    <script src="register.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
